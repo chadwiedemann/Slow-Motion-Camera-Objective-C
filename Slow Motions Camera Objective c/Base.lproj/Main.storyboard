@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="z4r-So-TXg">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Slow Motion Camera-->
+        <scene sceneID="xgl-gb-HZK">
+            <objects>
+                <viewController id="IIw-oj-1vl" customClass="SlowMotionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bFC-Lp-QZm"/>
+                        <viewControllerLayoutGuide type="bottom" id="nf5-xn-BV9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mle-aG-JFe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0O-aC-TER">
+                                <frame key="frameInset" minX="108" minY="75" width="158" height="30"/>
+                                <state key="normal" title="Record Slow Motion"/>
+                                <connections>
+                                    <action selector="recordSlowMoVideoButton:" destination="IIw-oj-1vl" eventType="touchUpInside" id="8yf-3a-uWn"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fon-gT-sec">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="6b5-Ty-zrj"/>
+                                    <constraint firstAttribute="height" constant="240" id="di4-Yz-CcO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n0O-aC-TER" firstAttribute="top" secondItem="bFC-Lp-QZm" secondAttribute="bottom" constant="55" id="XBp-ff-0cY"/>
+                            <constraint firstItem="Fon-gT-sec" firstAttribute="centerY" secondItem="mle-aG-JFe" secondAttribute="centerY" id="bjR-yO-d4i"/>
+                            <constraint firstItem="n0O-aC-TER" firstAttribute="centerX" secondItem="mle-aG-JFe" secondAttribute="centerX" id="tOA-jG-hLm"/>
+                            <constraint firstItem="Fon-gT-sec" firstAttribute="centerX" secondItem="mle-aG-JFe" secondAttribute="centerX" id="zeE-9O-rQW"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Slow Motion Camera" id="JsR-gr-f3Z"/>
+                    <connections>
+                        <outlet property="thumbNailImageView" destination="Fon-gT-sec" id="ZPE-Ky-B23"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZkL-qg-ObW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-482.39999999999998" y="236.13193403298354"/>
+        </scene>
+        <!--Thumbnails Collection View-->
+        <scene sceneID="caw-fC-lxg">
+            <objects>
+                <collectionViewController id="7nw-xD-kx8" customClass="ThumbnailsCollectionView" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="MMY-od-Xfy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="xL0-L3-qcm">
+                            <size key="itemSize" width="138" height="138"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pSa-WA-4dQ">
+                                <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="7nw-xD-kx8" id="MQi-cI-aGS"/>
+                            <outlet property="delegate" destination="7nw-xD-kx8" id="LRK-Ye-Dee"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="uuU-ww-RI5"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sLN-RT-pQB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="184.80000000000001" y="-387.25637181409297"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="kTr-uv-rQo">
+            <objects>
+                <tabBarController id="z4r-So-TXg" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="fF0-y4-Z3j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="IIw-oj-1vl" kind="relationship" relationship="viewControllers" id="r3Z-HS-Wgq"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="yt0-i0-1Br"/>
+                        <segue destination="YRj-iY-gzT" kind="relationship" relationship="viewControllers" id="3JR-SL-OKr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eOc-A5-Hzx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1435" y="-91"/>
+        </scene>
+        <!--Take regular Video-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MhG-mk-MgN">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Lar-bL-ETw"/>
+                                    <constraint firstAttribute="height" constant="241" id="T1G-qq-LOb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GU5-Rg-Ugc">
+                                <frame key="frameInset" minX="89" minY="79" width="196" height="30"/>
+                                <state key="normal" title="Record Normal Speed"/>
+                                <connections>
+                                    <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ENk-5h-E7F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GU5-Rg-Ugc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="59" id="00A-PR-Czt"/>
+                            <constraint firstItem="MhG-mk-MgN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ANd-GQ-4IL"/>
+                            <constraint firstItem="GU5-Rg-Ugc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Crb-SK-gDj"/>
+                            <constraint firstItem="MhG-mk-MgN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yf1-Cy-Dge"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Take regular Video" id="rdm-4d-vjd"/>
+                    <connections>
+                        <outlet property="thumbnailImageView" destination="MhG-mk-MgN" id="HdJ-Oj-fif"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1154.4000000000001" y="644.52773613193403"/>
+        </scene>
+        <!--Video Library-->
+        <scene sceneID="utb-ss-c94">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YRj-iY-gzT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Video Library" id="fdd-3Z-bku"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fap-6g-GIu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7nw-xD-kx8" kind="relationship" relationship="rootViewController" id="ycM-OI-JOd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="16c-9T-gyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-639" y="-430"/>
+        </scene>
+    </scenes>
+</document>

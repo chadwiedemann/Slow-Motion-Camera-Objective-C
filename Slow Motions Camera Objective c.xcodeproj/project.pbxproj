@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D88B67F71DAE7860006B3F78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D88B67F61DAE7860006B3F78 /* main.m */; };
+		D88B67FA1DAE7860006B3F78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D88B67F91DAE7860006B3F78 /* AppDelegate.m */; };
+		D88B67FD1DAE7860006B3F78 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88B67FC1DAE7860006B3F78 /* ViewController.m */; };
+		D88B68001DAE7860006B3F78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88B67FE1DAE7860006B3F78 /* Main.storyboard */; };
+		D88B68021DAE7860006B3F78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D88B68011DAE7860006B3F78 /* Assets.xcassets */; };
+		D88B68051DAE7860006B3F78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88B68031DAE7860006B3F78 /* LaunchScreen.storyboard */; };
+		D88B680E1DAEB49C006B3F78 /* ThumbnailsCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D88B680D1DAEB49C006B3F78 /* ThumbnailsCollectionView.m */; };
+		D89DEF4F1DB0249D00EE98B4 /* SlowMotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D89DEF4E1DB0249D00EE98B4 /* SlowMotionViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D88B67F21DAE7860006B3F78 /* Slow Motions Camera Objective c.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slow Motions Camera Objective c.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88B67F61DAE7860006B3F78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D88B67F81DAE7860006B3F78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D88B67F91DAE7860006B3F78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D88B67FB1DAE7860006B3F78 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D88B67FC1DAE7860006B3F78 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D88B67FF1DAE7860006B3F78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D88B68011DAE7860006B3F78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D88B68041DAE7860006B3F78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D88B68061DAE7860006B3F78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D88B680C1DAEB49C006B3F78 /* ThumbnailsCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbnailsCollectionView.h; sourceTree = "<group>"; };
+		D88B680D1DAEB49C006B3F78 /* ThumbnailsCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbnailsCollectionView.m; sourceTree = "<group>"; };
+		D89DEF4D1DB0249D00EE98B4 /* SlowMotionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlowMotionViewController.h; sourceTree = "<group>"; };
+		D89DEF4E1DB0249D00EE98B4 /* SlowMotionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlowMotionViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D88B67EF1DAE7860006B3F78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D88B67E91DAE7860006B3F78 = {
+			isa = PBXGroup;
+			children = (
+				D88B67F41DAE7860006B3F78 /* Slow Motions Camera Objective c */,
+				D88B67F31DAE7860006B3F78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D88B67F31DAE7860006B3F78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D88B67F21DAE7860006B3F78 /* Slow Motions Camera Objective c.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D88B67F41DAE7860006B3F78 /* Slow Motions Camera Objective c */ = {
+			isa = PBXGroup;
+			children = (
+				D88B67F81DAE7860006B3F78 /* AppDelegate.h */,
+				D88B67F91DAE7860006B3F78 /* AppDelegate.m */,
+				D88B67FB1DAE7860006B3F78 /* ViewController.h */,
+				D88B67FC1DAE7860006B3F78 /* ViewController.m */,
+				D89DEF4D1DB0249D00EE98B4 /* SlowMotionViewController.h */,
+				D89DEF4E1DB0249D00EE98B4 /* SlowMotionViewController.m */,
+				D88B680C1DAEB49C006B3F78 /* ThumbnailsCollectionView.h */,
+				D88B680D1DAEB49C006B3F78 /* ThumbnailsCollectionView.m */,
+				D88B67FE1DAE7860006B3F78 /* Main.storyboard */,
+				D88B68011DAE7860006B3F78 /* Assets.xcassets */,
+				D88B68031DAE7860006B3F78 /* LaunchScreen.storyboard */,
+				D88B68061DAE7860006B3F78 /* Info.plist */,
+				D88B67F51DAE7860006B3F78 /* Supporting Files */,
+			);
+			path = "Slow Motions Camera Objective c";
+			sourceTree = "<group>";
+		};
+		D88B67F51DAE7860006B3F78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D88B67F61DAE7860006B3F78 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D88B67F11DAE7860006B3F78 /* Slow Motions Camera Objective c */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D88B68091DAE7860006B3F78 /* Build configuration list for PBXNativeTarget "Slow Motions Camera Objective c" */;
+			buildPhases = (
+				D88B67EE1DAE7860006B3F78 /* Sources */,
+				D88B67EF1DAE7860006B3F78 /* Frameworks */,
+				D88B67F01DAE7860006B3F78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Slow Motions Camera Objective c";
+			productName = "Slow Motions Camera Objective c";
+			productReference = D88B67F21DAE7860006B3F78 /* Slow Motions Camera Objective c.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D88B67EA1DAE7860006B3F78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Chad Wiedemann";
+				TargetAttributes = {
+					D88B67F11DAE7860006B3F78 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = P44YFW78FY;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D88B67ED1DAE7860006B3F78 /* Build configuration list for PBXProject "Slow Motions Camera Objective c" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D88B67E91DAE7860006B3F78;
+			productRefGroup = D88B67F31DAE7860006B3F78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D88B67F11DAE7860006B3F78 /* Slow Motions Camera Objective c */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D88B67F01DAE7860006B3F78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D88B68051DAE7860006B3F78 /* LaunchScreen.storyboard in Resources */,
+				D88B68021DAE7860006B3F78 /* Assets.xcassets in Resources */,
+				D88B68001DAE7860006B3F78 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D88B67EE1DAE7860006B3F78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D88B67FD1DAE7860006B3F78 /* ViewController.m in Sources */,
+				D88B67FA1DAE7860006B3F78 /* AppDelegate.m in Sources */,
+				D88B67F71DAE7860006B3F78 /* main.m in Sources */,
+				D88B680E1DAEB49C006B3F78 /* ThumbnailsCollectionView.m in Sources */,
+				D89DEF4F1DB0249D00EE98B4 /* SlowMotionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D88B67FE1DAE7860006B3F78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D88B67FF1DAE7860006B3F78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D88B68031DAE7860006B3F78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D88B68041DAE7860006B3F78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D88B68071DAE7860006B3F78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D88B68081DAE7860006B3F78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D88B680A1DAE7860006B3F78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P44YFW78FY;
+				INFOPLIST_FILE = "Slow Motions Camera Objective c/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "turntotech.io.Slow-Motions-Camera-Objective-c";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D88B680B1DAE7860006B3F78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P44YFW78FY;
+				INFOPLIST_FILE = "Slow Motions Camera Objective c/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "turntotech.io.Slow-Motions-Camera-Objective-c";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D88B67ED1DAE7860006B3F78 /* Build configuration list for PBXProject "Slow Motions Camera Objective c" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D88B68071DAE7860006B3F78 /* Debug */,
+				D88B68081DAE7860006B3F78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D88B68091DAE7860006B3F78 /* Build configuration list for PBXNativeTarget "Slow Motions Camera Objective c" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D88B680A1DAE7860006B3F78 /* Debug */,
+				D88B680B1DAE7860006B3F78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D88B67EA1DAE7860006B3F78 /* Project object */;
+}
