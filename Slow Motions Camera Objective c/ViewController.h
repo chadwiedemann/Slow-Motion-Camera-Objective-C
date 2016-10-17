@@ -17,7 +17,7 @@
 @property (nonatomic, strong) NSURL *videoURL;
 @property (nonatomic, strong) UIImage *thumbnail;
 @property (weak, nonatomic) IBOutlet UIImageView *thumbnailImageView;
-@property (nonatomic, strong) NSMutableArray *URLArray;
+@property (nonatomic, strong) NSMutableArray *URLArray1;
 
 - (IBAction)record:(id)sender;
 

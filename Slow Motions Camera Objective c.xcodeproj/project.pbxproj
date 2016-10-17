@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		D88B67F71DAE7860006B3F78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D88B67F61DAE7860006B3F78 /* main.m */; };
 		D88B67FA1DAE7860006B3F78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D88B67F91DAE7860006B3F78 /* AppDelegate.m */; };
-		D88B67FD1DAE7860006B3F78 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88B67FC1DAE7860006B3F78 /* ViewController.m */; };
 		D88B68001DAE7860006B3F78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88B67FE1DAE7860006B3F78 /* Main.storyboard */; };
 		D88B68021DAE7860006B3F78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D88B68011DAE7860006B3F78 /* Assets.xcassets */; };
 		D88B68051DAE7860006B3F78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88B68031DAE7860006B3F78 /* LaunchScreen.storyboard */; };
 		D88B680E1DAEB49C006B3F78 /* ThumbnailsCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D88B680D1DAEB49C006B3F78 /* ThumbnailsCollectionView.m */; };
-		D89DEF4F1DB0249D00EE98B4 /* SlowMotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D89DEF4E1DB0249D00EE98B4 /* SlowMotionViewController.m */; };
+		D89DEF581DB12AEC00EE98B4 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D89DEF571DB12AEC00EE98B4 /* PlayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,16 +21,14 @@
 		D88B67F61DAE7860006B3F78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D88B67F81DAE7860006B3F78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D88B67F91DAE7860006B3F78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D88B67FB1DAE7860006B3F78 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D88B67FC1DAE7860006B3F78 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D88B67FF1DAE7860006B3F78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D88B68011DAE7860006B3F78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D88B68041DAE7860006B3F78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D88B68061DAE7860006B3F78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D88B680C1DAEB49C006B3F78 /* ThumbnailsCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbnailsCollectionView.h; sourceTree = "<group>"; };
 		D88B680D1DAEB49C006B3F78 /* ThumbnailsCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbnailsCollectionView.m; sourceTree = "<group>"; };
-		D89DEF4D1DB0249D00EE98B4 /* SlowMotionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlowMotionViewController.h; sourceTree = "<group>"; };
-		D89DEF4E1DB0249D00EE98B4 /* SlowMotionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlowMotionViewController.m; sourceTree = "<group>"; };
+		D89DEF561DB12AEC00EE98B4 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		D89DEF571DB12AEC00EE98B4 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +63,10 @@
 			children = (
 				D88B67F81DAE7860006B3F78 /* AppDelegate.h */,
 				D88B67F91DAE7860006B3F78 /* AppDelegate.m */,
-				D88B67FB1DAE7860006B3F78 /* ViewController.h */,
-				D88B67FC1DAE7860006B3F78 /* ViewController.m */,
-				D89DEF4D1DB0249D00EE98B4 /* SlowMotionViewController.h */,
-				D89DEF4E1DB0249D00EE98B4 /* SlowMotionViewController.m */,
 				D88B680C1DAEB49C006B3F78 /* ThumbnailsCollectionView.h */,
 				D88B680D1DAEB49C006B3F78 /* ThumbnailsCollectionView.m */,
+				D89DEF561DB12AEC00EE98B4 /* PlayerViewController.h */,
+				D89DEF571DB12AEC00EE98B4 /* PlayerViewController.m */,
 				D88B67FE1DAE7860006B3F78 /* Main.storyboard */,
 				D88B68011DAE7860006B3F78 /* Assets.xcassets */,
 				D88B68031DAE7860006B3F78 /* LaunchScreen.storyboard */,
@@ -161,11 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D88B67FD1DAE7860006B3F78 /* ViewController.m in Sources */,
 				D88B67FA1DAE7860006B3F78 /* AppDelegate.m in Sources */,
 				D88B67F71DAE7860006B3F78 /* main.m in Sources */,
 				D88B680E1DAEB49C006B3F78 /* ThumbnailsCollectionView.m in Sources */,
-				D89DEF4F1DB0249D00EE98B4 /* SlowMotionViewController.m in Sources */,
+				D89DEF581DB12AEC00EE98B4 /* PlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

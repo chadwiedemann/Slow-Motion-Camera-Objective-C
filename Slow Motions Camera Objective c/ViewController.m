@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.URLArray = [[NSMutableArray alloc]init];
+    self.URLArray1 = [[NSMutableArray alloc]init];
     
     
     
@@ -61,12 +61,12 @@
     //saves the URLs for the images that were saved in the documents directory
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if ([defaults objectForKey:@"URLs"]){
-        self.URLArray = [[defaults objectForKey:@"URLs"] mutableCopy];
-        [self.URLArray addObject:str];
-        [defaults setObject: [self.URLArray copy]  forKey:@"URLs"];
+        self.URLArray1 = [[defaults objectForKey:@"URLs"] mutableCopy];
+        [self.URLArray1 addObject:str];
+        [defaults setObject: [self.URLArray1 copy]  forKey:@"URLs"];
     }else{
-        [self.URLArray addObject:str];
-        [defaults setObject:[self.URLArray copy] forKey:@"URLs"];
+        [self.URLArray1 addObject:str];
+        [defaults setObject:[self.URLArray1 copy] forKey:@"URLs"];
     }
     [defaults synchronize];
     [picker dismissViewControllerAnimated:YES completion:nil];
